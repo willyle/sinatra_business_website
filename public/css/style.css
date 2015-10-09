@@ -1,0 +1,70 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+
+html{
+	font-family: Garamond;
+}
+
+header{
+	border: solid 2px red;
+	background-color: Gray;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+#logo{
+	border: solid 2px black;
+	width: 150px;
+	height: 75px;
+	float: left;
+}
+nav{
+	border: solid 2px blue;
+	overflow: auto;
+	max-width: 687px;
+	min-width: 407px;
+	margin-top: 30px;
+}
+
+#nav{
+	border: solid 2px green;
+	list-style: none;
+	padding-left: none;
+	float: left;
+}
+
+#nav li{
+	border: solid 2px orange;
+	background-color: gray;
+	display: inline-block;
+	padding: 10px;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+}
+
+
+#login{
+	border: solid 2px yellow;
+	width: 100px;
+	height: 50px;
+	float: right;
+}
+
+#container{
+	border: solid purple;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+img{
+	width: 100%;
+}
+
+.clear{
+	clear: both;
+}

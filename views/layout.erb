@@ -1,63 +1,71 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        
-        <title><%= @title%></title>
-        
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+	<head>
+		<meta charset="utf-8" />
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="/js/javascript.js"></script>
+		<title><%= @title%></title>
 
-    </head>
-    
-    <body>
-        <%
-            nav = ["Home", "How It Works", "Our Services", "Contact Us", "Book An Appointment", "Join Our Team"] 
-            pages = ["/", "about", "services", "contact", "appointment", "recruit"] 
-        %>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 
-        <header>
-            <div id="login">
-            
-            </div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="/js/javascript.js"></script>
 
-            <div id="logo">
-            
-            </div>
+	</head>
 
-            <nav>
-                <ul id="nav">
+	<body>
+		<%
+		nav = ["Home", "How It Works", "Our Services", "Contact Us", "Book An Appointment", "Join Our Team"] 
+		pages = ["/", "about", "services", "contact", "appointment", "recruit"] 
+		%>
 
-                <% nav.each_with_index do |nav_item, nav_index| %>
-                    <li>
-                        <a href="<%= pages[nav_index] %>">
-                            <%= nav_item %>
-                        </a>    
-                    </li>
-                <% end %>
+		<header>
+			<div id="login_signup_buttons">
+				<button id="login_button">Login</button>
+				<button id="signup_button">Signup</button>
+			</div>
 
-                </ul>
-            </nav>
+			<div id="logo">
 
-            <div class="clear"></div>
+			</div>
 
-        </header>
+			<nav>
+				<ul id="nav">
 
-        <div id="container">
-            <div id="banner_photo">
-                <img src="/images/<%= @photo%>.jpg" />
-            </div>
+				<% nav.each_with_index do |nav_item, nav_index| %>
+					<li>
+						<a href="<%= pages[nav_index] %>">
+							<%= nav_item %>
+						</a>
+					</li>
+				<% end %>
 
-            <%= yield %>
+				</ul>
+			</nav>
+
+			<div class="clear"></div>
+		</header>
+
+		<div id="container">
+			<div id="login" class="hide">
+
+			</div>
+
+			<div id="signup" class="hide">
+
+			</div>
+
+			<div id="banner_photo">
+				<img src="/images/<%= @photo%>.jpg" />
+			</div>
+
+			<%= yield %>
 
 
 
-        </div>
+		</div>
 
-        <footer>
+		<footer>
 
-        </footer>
-    </body>
+		</footer>
+	</body>
 </html>

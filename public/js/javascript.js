@@ -1,11 +1,11 @@
 $(document).ready(function(){
 	//hovering effect for nav bar
-	$("li").on("mouseover",function(){
-		$(this).css("background-color", "gray");
+	$("a").on("mouseover",function(){
+		$(this).closest("li").css("background-color", "gray");
 	});
 
-	$("li").on("mouseout",function(){
-		$(this).css("background-color", "#e9e9e9");
+	$("a").on("mouseout",function(){
+		$(this).closest("li").css("background-color", "#e9e9e9");
 	});
 
 	//obtaining width of container to move log-in/sign-u[] box to the right side

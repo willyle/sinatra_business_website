@@ -9,7 +9,7 @@ html{
 
 header{
 	border: solid 2px red;
-	background-color: Gray;
+	background-color: #e9e9e9;
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -23,7 +23,7 @@ header{
 nav{
 	border: solid 2px blue;
 	overflow: auto;
-	max-width: 687px;
+	max-width: 700px;
 	min-width: 407px;
 	margin-top: 30px;
 }
@@ -37,7 +37,7 @@ nav{
 
 #nav li{
 	border: solid 2px orange;
-	background-color: gray;
+	background-color: #e9e9e9;
 	display: inline-block;
 	padding: 10px;
 }
@@ -68,3 +68,44 @@ img{
 .clear{
 	clear: both;
 }
+
+/*_________________*/
+
+input {
+	padding: 5px;
+	width: 25%;
+	font-size: 12px;
+}
+
+textarea {
+	font-size: 12px;
+}
+
+.submit_row {
+/*	letter-spacing: 10px;
+	font-size: none;
+	line-height: 30px;
+	background-color: #e8554e;
+	color: white;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	vertical-align: middle;*/
+
+}
+
+#side_wrapper {
+	position: absolute;
+	right: 70px;
+	bottom: 0px;
+	border: 10px solid white;
+	width: 250px;
+}
+
+form {
+	font-family: "lft-etica",sans-serif
+}
+
+
+
+

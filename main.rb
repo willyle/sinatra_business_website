@@ -1,4 +1,8 @@
 require "sinatra"
+require "mandrill"
+
+api_key = ENV['MANDRILL_APIKEY']
+m = Mandrill::API.new "#{api_key}"
 
 get "/" do
 	@title = "Home"
@@ -40,4 +44,21 @@ post "/login" do
 	@title = "Welcome"
 	@photo = "services"
 	erb :login
+end
+
+post "/mail" do
+	@title = "Thank You"
+	@photo = "contact"
+
+	message = {
+		subject: params[:subject],
+		from_name: params[:name],
+		text: params[:message],
+		to: [{ email: 'mrwillyle@gmail.com', name: 'Recipient1' }],
+		html: params[:message],
+		from_email: params[:email]
+	}
+	sending = m.messages.send message
+	puts sending
+	erb :mail
 end

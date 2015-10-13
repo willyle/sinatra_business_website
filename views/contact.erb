@@ -1,26 +1,22 @@
 <h3>Contact Us</h3>
 
 <div id="contact_wrapper">
-	<div id="contact_form"></div>
-	<div id="contact_info"></div>
+	<div id="contact_form">
+    <form method="post" action="/mail">
+      Your Name *<br> 
+      <input type="text" name="name"><br>
+      Your Email *<br> 
+      <input type="text" name="email"><br>
+      Subject<br>
+      <input type="text" name="subject"><br>
+      Your Message<br>
+      <textarea rows="4" cols="100" name="message"></textarea>
 
-</div>
-
-
-<form action="demo">
-Your Name * <br> <input type="text" name="FirstName">
-<br>
-Your Email * <br> <input type="text" name="Email">
-<br>
-Subject <br> <input type="text" name="Sub"><br>
-Your Message <br>
-<textarea rows="4" cols="100"></textarea>
-</form>
-
-<p class="submit_row">
-	<button type="submit ">Submit</button>
-</p>
-
+      <p class="submit_row">
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </div>
 
 <div id="side_wrapper">
 <aside id="contact_info">
@@ -38,18 +34,4 @@ Your Message <br>
       </dd>
     </dl>
   </aside>
- </div>
-
-<br>
-
-
-
-
-
-	</div>
-</footer>
-
-
-</div>
-
  </div>

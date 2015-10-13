@@ -9,6 +9,7 @@ html{
 
 header{
 
+
 	border: solid 2px red;
 	border: solid 1px #e9e9e9;
 	background-color: #e9e9e9;
@@ -105,7 +106,7 @@ img{
 }
 
 .home_box ul{
-	margin-left: 6 0px;
+	margin-left: 60px;
 }
 
 p{
@@ -118,6 +119,7 @@ p{
 
 /*_________________*/
 
+
 input {
 	padding: 5px;
 	width: 25%;
@@ -128,18 +130,7 @@ textarea {
 	font-size: 12px;
 }
 
-.submit_row {
-/*	letter-spacing: 10px;
-	font-size: none;
-	line-height: 30px;
-	background-color: #e8554e;
-	color: white;
-	display: inline-block;
-	text-transform: uppercase;
-	font-weight: 700;
-	vertical-align: middle;*/
 
-}
 
 #side_wrapper {
 	position: absolute;
@@ -154,9 +145,6 @@ form {
 }
 
 
-
-
-
 .hide{
 	display:none;
 }
@@ -164,3 +152,4 @@ form {
 .show{
 	display: block;
 }
+

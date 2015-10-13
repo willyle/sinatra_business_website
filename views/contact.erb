@@ -1,41 +1,40 @@
 <h3>Contact Us</h3>
 
 <div id="contact_wrapper">
-	<div id="contact_form"></div>
-	<div id="contact_info"></div>
+	<div id="contact_form">
+    <form method="post" action="/mail">
+      Your Name *<br> 
+      <input type="text" name="name"><br>
+      Your Email *<br> 
+      <input type="text" name="email"><br>
+      Subject<br>
+      <input type="text" name="subject"><br>
+      Your Message<br>
+      <textarea rows="4" cols="100" name="message"></textarea>
 
+      <p class="submit_row">
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </div>
+
+  <div id="side_wrapper">
+    <aside id="contact_info">
+      <dl>
+        <dt>Email</dt>
+        <dd>
+          <a href="TechToMe.com" title="Click to send us an email">TechTo-Me.com</a>
+        </dd>
+        <dt>Customer Service</dt>
+        <dd>
+          <a href="Telephone" title="Click to call us">215-777-7777</a>
+        </dd>
+        <dt>Follow Us </dt>
+        <dd class="social-links">
+          <a class="fb" href="http://www.facebook.com" title="Find us on Facebook">Facebook</a>
+          <a class="tt" href="http://twitter.com" title="Find us on Twitter">Twitter</a>
+        </dd>
+      </dl>
+    </aside>
+  </div>
 </div>
-
-
-<form action="demo">
-Your Name * <br> <input type="text" name="FirstName">
-<br>
-Your Email * <br> <input type="text" name="Email">
-<br>
-Subject <br> <input type="text" name="Sub"><br>
-Your Message <br>
-<textarea rows="4" cols="100"></textarea>
-</form>
-
-<p class="submit_row">
-	<button type="submit ">Submit</button>
-</p>
-
-
-<div id="side_wrapper">
-<aside id="contact_info">
-    <dl>
-      <dt>Email</dt>
-      <dd><a href="TechToMe.com" title="Click to send us an email">TechTo-Me.com</a></dd>
-      <dt>Customer Service</dt>
-      <dd><a href="Telephone" title="Click to call us">215-777-7777</a></dd>
-      <dt>Follow Us </dt>
-      
-      
-      <dd class="social-links">
-        <a class="fb" href="http://www.facebook.com" title="Find us on Facebook">Facebook</a>
-        <a class="tt" href="http://twitter.com" title="Find us on Twitter">Twitter</a>
-      </dd>
-    </dl>
-  </aside>
- </div>

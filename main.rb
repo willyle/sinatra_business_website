@@ -35,3 +35,9 @@ get "/recruit" do
 	@photo = "recruit"
 	erb :recruit
 end
+
+post "/login" do
+	@title = "Welcome"
+	@photo = "services"
+	erb :login
+end

@@ -56,7 +56,7 @@ li a{
 	/*border: solid 2px yellow;*/
 	width: 155px;
 	float: right;
-	 margin-top: 20px;
+	margin-top: 20px;
 }
 
 button{
@@ -69,21 +69,27 @@ button{
 }
 
 #login{
-	background-color: blue;
+	background-color: #e9e9e9;
 	opacity: 0.5;
-	height: 200px;
 	width: 200px;
+	padding-top: 20px;
 	position: absolute;
 	z-index: 0;
+	text-align: center;
+}
+
+#login form input, #signup form input{
+	width: 100px;
 }
 
 #signup{
-	background-color: red;
+	background-color: #e9e9e9;
 	opacity: 0.5;
-	height: 200px;
 	width: 200px;
+	padding-top: 20px;
 	position: absolute;
 	z-index: 0;
+	text-align: center;
 }
 
 img{
@@ -153,3 +159,7 @@ form {
 	display: block;
 }
 
+footer p{
+	margin: 0 auto;
+	width:250px;
+}

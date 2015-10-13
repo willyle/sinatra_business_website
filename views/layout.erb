@@ -47,11 +47,23 @@
 
 		<div id="container">
 			<div id="login" class="hide">
-
+				<form method="post" action="/signin">
+					<label for="username">Username</label>
+					<input type="text" name="username"><br>
+					<label for="password">&nbsp;Password</label>
+					<input type="password" name="password"><br><br>
+					<input type="submit">
+				</form>
 			</div>
 
 			<div id="signup" class="hide">
-
+				<form method="post" action="/signin">
+					<label for="username">Username</label>
+					<input type="text" name="username"><br>
+					<label for="email">&nbsp; &nbsp; &nbsp; &nbsp;Email</label>
+					<input type="text" name="email"><br><br>
+					<input type="submit" value="Signup">
+				</form>
 			</div>
 
 			<div id="banner_photo">
@@ -65,7 +77,7 @@
 		</div>
 
 		<footer>
-
+			<p>TechTo-Me&reg; 2015 All rights reserved.</p>
 		</footer>
 	</body>
 </html>

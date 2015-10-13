@@ -1,12 +1,4 @@
 $(document).ready(function(){
-	$("li").on("mouseover",function(){
-		$(this).css("background-color", "grey");
-	});
-
-	$("li").on("mouseout",function(){
-		$(this).css("background-color", "#e9e9e9");
-	});
-
 	//hovering effect for nav bar
 	$("a").on("mouseover",function(){
 		$(this).closest("li").css("background-color", "gray");
@@ -54,5 +46,22 @@ $(document).ready(function(){
 			signup = false;
 			$("#signup").removeClass("show").addClass("hide");
 		}
+	});
+
+	//MouseOver to 1.0 opacity
+	$("#login").on("mouseover",function(){
+		$(this).css({opacity: 1.0});
+	});
+
+	$("#login").on("mouseout",function(){
+		$(this).css({opacity: 0.5});
+	});
+
+	$("#signup").on("mouseover",function(){
+		$(this).css({opacity: 1.0});
+	});
+
+	$("#signup").on("mouseout",function(){
+		$(this).css({opacity: 0.5});
 	});
 });

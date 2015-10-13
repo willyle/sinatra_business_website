@@ -16,7 +16,6 @@ header{
 }
 
 #logo{
-	/*border: solid 2px black;*/
 	width: 150px;
 	height: 75px;
 	float: left;
@@ -27,7 +26,6 @@ header{
 	margin-top: 20px;
 }
 nav{
-	/*border: solid 2px blue;*/
 	overflow: auto;
 	max-width: 700px;
 	min-width: 407px;
@@ -35,14 +33,12 @@ nav{
 }
 
 #nav{
-	/*border: solid 2px green;*/
 	list-style: none;
 	padding-left: none;
 	float: left;
 }
 
 #nav li{
-	/*border: solid 2px orange;*/
 	background-color: #e9e9e9;
 	display: inline-block;
 	padding: 10px;
@@ -55,7 +51,6 @@ li a{
 
 
 #login_signup_buttons{
-	/*border: solid 2px yellow;*/
 	width: 155px;
 	float: right;
 	margin-top: 20px;
@@ -65,7 +60,6 @@ button{
 	font-size: 150%;
 }
 #container{
-	/*border: solid purple;*/
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -99,7 +93,7 @@ img{
 	z-index: 1;
 }
 
-.home_box, .about_box{
+.home_box, .about_box, .services_box{
 	border: solid 10px white;
 	border-radius: 20px;
 	background-color: gray;
@@ -108,12 +102,12 @@ img{
 	float: left;
 }
 
-.home_box h1, .about_box h1{
+.home_box h1, .about_box h1, .services_box h1{
 	text-align: center;
 	margin-top: 20px;
 }
 
-.home_box ul{
+.home_box ul, .services_box ul{
 	margin-left: 60px;
 }
 
@@ -157,5 +151,5 @@ form {
 
 footer p{
 	margin: 0 auto;
-	width:250px;
+	width:275px;
 }
